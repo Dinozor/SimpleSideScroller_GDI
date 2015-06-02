@@ -9,7 +9,30 @@ struct _image
 {
 	HBITMAP bitmap;
 	char *full_name;
-	
 };
+
+LoadImge();
+DrawImage();
+UnloadImage();
+
+CreateImgAnimation();
+AddImgToAnimation();
+RemoveImgFromAnimation();
+GetImgFromAnimation();
+GetAnimationArray();
+
+LaunchAnimation();
+StopAnimation();
+
+CreateLayer();
+UpdateLayer();
+AddImgToLayer();
+RemoveImgFromLayer();
+DestroyLayer();
+
+AddChildLayer();
+RemoveChildLayer();
+GetChildLayer();
+GetLayerChilds();
 
 #endif

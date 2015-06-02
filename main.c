@@ -1,4 +1,3 @@
-//#include <WinGdi.h>
 #define WINVER 0x0602
 #include <windows.h>
 
@@ -56,7 +55,7 @@ int __stdcall WinMain(HINSTANCE hInst,HINSTANCE hPrevInst,LPSTR lpCmdLine,int nS
 
 	SelectObject(hdcMem, MyBitmap);
 	//TransparentBlt(hDC, 0, 0, 64, 64, hdcMem, 0, 0, 64, 64, RGB(0,255,0));
-	//BitBlt(hDC, 0, 0, 64, 64, hdcMem, 0, 0, SRCPAINT);
+	BitBlt(hDC, 0, 0, 64, 64, hdcMem, 0, 0, SRCPAINT);
 
 	while(!exit)
 	{
